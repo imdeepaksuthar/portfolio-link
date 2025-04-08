@@ -1,464 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Deepak Suthar - Backend Developer specializing in Laravel, Node.js, and scalable systems. Crafting robust APIs, scalable systems, and efficient databases.">
-  <meta name="keywords" content="backend developer, Laravel, Node.js, API development, MySQL, system architecture, web development, freelance developer">
-  <meta property="og:title" content="Deepak Suthar - Backend Developer">
-  <meta property="og:image" content="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/bg/meta-deepak.jpg">  
-  <meta property="og:description" content="Backend developer crafting robust APIs, scalable systems, and efficient databases with Laravel, Node.js & MySQL.">
-  <meta property="og:url" content="https://imdeepaksuthar.github.io/portfolio-link">  <meta property="og:type" content="website">
-
-  <link rel="canonical" href="https://imdeepaksuthar.github.io/portfolio-link">  
-  <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <title>Deepak Suthar - Backend Developer | Laravel, Node.js, MySQL</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deepak Suthar - Backend Developer specializing in Laravel, Node.js, and scalable systems. Crafting robust APIs, scalable systems, and efficient databases.">
+    <meta name="keywords" content="backend developer, Laravel, Node.js, API development, MySQL, system architecture, web development, freelance developer">
+    <meta property="og:title" content="Deepak Suthar - Backend Developer">
+    <meta property="og:image" content="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/bg/meta-deepak.jpg">
+    <meta property="og:description" content="Backend developer crafting robust APIs, scalable systems, and efficient databases with Laravel, Node.js & MySQL.">
+    <meta property="og:url" content="https://imdeepaksuthar.github.io/portfolio-link">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://imdeepaksuthar.github.io/portfolio-link">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Deepak Suthar - Backend Developer | Laravel, Node.js, MySQL</title>
+    <base href="/portfolio-link/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
             animationDelay: {
-                '2000': '2s',
-                '4000': '4s',
+              '2000': '2s',
+              '4000': '4s',
             },
-          colors: {
-            primary: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
-            }
-          },
-          animation: {
-            'float': 'float 6s ease-in-out infinite',
-            'float-reverse': 'float-reverse 5s ease-in-out infinite',
-            'blob': 'blob 7s infinite',
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-20px)' },
+            colors: {
+              primary: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+              }
             },
-            'float-reverse': {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(15px)' },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'float-reverse': 'float-reverse 5s ease-in-out infinite',
+              'blob': 'blob 7s infinite',
             },
-            blob: {
-              '0%': { transform: 'translate(0px, 0px) scale(1)' },
-              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            keyframes: {
+              float: {
+                '0%, 100%': {
+                  transform: 'translateY(0)'
+                },
+                '50%': {
+                  transform: 'translateY(-20px)'
+                },
+              },
+              'float-reverse': {
+                '0%, 100%': {
+                  transform: 'translateY(0)'
+                },
+                '50%': {
+                  transform: 'translateY(15px)'
+                },
+              },
+              blob: {
+                '0%': {
+                  transform: 'translate(0px, 0px) scale(1)'
+                },
+                '33%': {
+                  transform: 'translate(30px, -50px) scale(1.1)'
+                },
+                '66%': {
+                  transform: 'translate(-20px, 20px) scale(0.9)'
+                },
+                '100%': {
+                  transform: 'translate(0px, 0px) scale(1)'
+                },
+              }
             }
           }
         }
       }
-    }
-  </script>
+    </script>
+    <style>
+      html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      body {
+        overflow-x: hidden;
+        font-family: 'Inter', sans-serif;
+        @apply bg-gray-50 dark: bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+      }
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      .gradient-text {
+        @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent;
+      }
 
-  <!-- Smooth Scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+      .blob {
+        @apply absolute rounded-full opacity-10 blur-xl -z-10;
+        filter: blur(60px);
+      }
 
-  <style>
-    html {
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-    body {
-      overflow-x: hidden;
-      font-family: 'Inter', sans-serif;
-      @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
-    }
-    .gradient-text {
-      @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent;
-    }
-    .blob {
-      @apply absolute rounded-full opacity-10 blur-xl -z-10;
-      filter: blur(60px);
-    }
-    .service-card {
-      @apply bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-500;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD40FQZRC7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      .service-card {
+        @apply bg-white dark: bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-500;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD40FQZRC7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-JD40FQZRC7');
-  </script>
-</head>
-<body class="relative overflow-x-hidden">
-
-  <!-- Theme Toggle -->
-  <button id="themeToggle" class="fixed right-4 bottom-4 z-50 w-12 h-12 rounded-full bg-primary-500 text-white shadow-lg flex items-center justify-center hover:bg-primary-600 transition">
-    <i class="fas fa-moon dark:hidden"></i>
-    <i class="fas fa-sun hidden dark:block"></i>
-  </button>
-
-  <!-- Blob Background Elements
-  <div class="blob bg-primary-300 w-64 h-64 top-20 -left-32 animate-blob"></div>
-  <div class="blob bg-primary-500 w-80 h-80 bottom-20 -right-32 animate-blob animation-delay-2000"></div>
-  <div class="blob bg-primary-400 w-72 h-72 top-1/2 left-1/4 animate-blob animation-delay-4000"></div> -->
-
-  <!-- Mobile App Style Navbar -->
-  <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 px-4 py-3 flex justify-between items-center md:hidden transition-colors duration-300">
-    <div class="font-bold text-primary-500 text-lg">Deepak Suthar</div>
-    <button id="mobileMenuToggle" class="text-gray-600 dark:text-gray-300 text-xl transition-colors">
-      <i class="fas fa-bars"></i>
-    </button>
-  </nav>
-
-  <!-- Mobile Slide Menu -->
-  <div id="mobileMenu" class="fixed top-16 left-0 w-full bg-white dark:bg-gray-800 hidden z-40 shadow-lg px-4 py-4 space-y-4 transition-all duration-300">
-    <a href="#home" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-      <i class="fas fa-home mr-2"></i> Home
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-JD40FQZRC7');
+    </script>
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- Theme Toggle -->
+    <!-- <button id="themeToggle" class="fixed right-4 bottom-4 z-50 w-12 h-12 rounded-full bg-primary-500 text-white shadow-lg flex items-center justify-center hover:bg-primary-600 transition"><i class="fas fa-moon dark:hidden"></i><i class="fas fa-sun hidden dark:block"></i></button> -->
+    <a href="https://wa.me/919983878055?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" id="whatsappButton" class="fixed right-4 bottom-4 z-50 w-12 h-12 rounded-full bg-green-500 text-white shadow-lg flex items-center justify-center hover:bg-green-600 transition">
+      <i class="fab fa-whatsapp text-xl"></i>
     </a>
-    <a href="#services" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-      <i class="fas fa-code mr-2"></i> Services
-    </a>
-    <a href="#contact" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-      <i class="fas fa-envelope mr-2"></i> Contact
-    </a>
-  </div>
-
-  <!-- Desktop Navbar -->
-  <nav class="hidden md:flex fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 px-8 py-4 justify-between items-center transition-colors duration-300">
-    <div class="font-bold text-primary-500 text-xl">Deepak Suthar</div>
-    <div class="flex space-x-8">
-      <a href="#home" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Home</a>
-      <a href="#services" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Services</a>
-      <a href="#contact" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Contact</a>
-    </div>
-  </nav>
-
-
-  <!-- Home Section -->
-  <!-- Home Section -->
-<section
-id="home"
-style="background-image: url('https://github.com/imdeepaksuthar/portfolio-link/blob/70c270c6c3f5110768e575957ce9080d467fe895/img/bg/bg.jpg');"
-class="min-h-screen pt-24 px-6 flex flex-col justify-center items-center text-center relative overflow-hidden bg-cover bg-center bg-no-repeat"
->
-<!-- Optional dark overlay for readability -->
-<div class="absolute inset-0 bg-black/50 dark:bg-black/60 z-0"></div>
-
-<div class="max-w-3xl mx-auto relative z-10" data-aos="fade-up" data-aos-delay="100">
-  <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-lg animate-float">
-    <span class="text-4xl">👋</span>
-  </div>
-  <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
-    Hey, I'm <span class="gradient-text">Deepak Suthar</span>
-  </h1>
-  <p class="text-lg md:text-xl text-gray-200 dark:text-gray-300 mb-8">
-    Backend developer crafting robust APIs, scalable systems, and efficient databases with Laravel, Node.js & MySQL.
-  </p>
-  <div class="flex flex-col sm:flex-row justify-center gap-4">
-    <a href="#contact" data-scroll class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
-      <i class="fas fa-paper-plane"></i> Contact Me
-    </a>
-    <a href="#services" data-scroll class="border border-primary-500 text-primary-500 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center gap-2">
-      <i class="fas fa-code"></i> My Services
-    </a>
-  </div>
-</div>
-
-<!-- Tech Stack Icons -->
-<div class="mt-16 grid grid-cols-4 md:flex gap-6 md:gap-10 relative z-10" data-aos="fade-up" data-aos-delay="300">
-  <div class="tech-icon" data-tooltip="Laravel">
-    <i class="fab fa-laravel text-3xl text-red-500"></i>
-  </div>
-  <div class="tech-icon" data-tooltip="Node.js">
-    <i class="fab fa-node-js text-3xl text-green-500"></i>
-  </div>
-  <div class="tech-icon" data-tooltip="MySQL">
-    <i class="fas fa-database text-3xl text-blue-500"></i>
-  </div>
-  <div class="tech-icon" data-tooltip="API Development">
-    <i class="fas fa-server text-3xl text-purple-500"></i>
-  </div>
-</div>
-</section>
-
-
-  <!-- Services Section -->
-  <section id="services" class="py-20 px-6 bg-white dark:bg-gray-800 rounded-t-3xl relative overflow-hidden">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4 gradient-text">My Expertise</h2>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          I specialize in backend development with a focus on performance, security, and scalability.
-        </p>
-      </div>
+    <!-- Thank You Modal with animation -->
+    <div id="thankYouModal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+      <!-- Blur Backdrop -->
+      <div id="thankYouBackdrop" class="fixed inset-0 bg-white/30 backdrop-blur-none transition-all duration-300"></div>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-code text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">API Development</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            RESTful APIs using Laravel, Node.js, Express.js with secure authentication (JWT, OAuth), rate limiting, and thorough documentation.
-          </p>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-database text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">Database Design</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            Relational DBs, indexes, migrations, structure planning, query optimization, and data modeling for performance at scale.
-          </p>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-project-diagram text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">System Architecture</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            Building scalable systems with microservices, code optimization, caching strategies, and cloud deployment.
-          </p>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-shield-alt text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">Security</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            Implementing security best practices including data validation, encryption, CSRF protection, and secure authentication flows.
-          </p>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-tachometer-alt text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">Performance</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            Optimizing backend performance through query tuning, caching strategies, and efficient algorithms.
-          </p>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
-            <i class="fas fa-cloud text-xl"></i>
-          </div>
-          <h3 class="font-bold text-xl mb-3 text-primary-500">Cloud Integration</h3>
-          <p class="text-gray-600 dark:text-gray-300">
-            Deploying and managing applications on cloud platforms with CI/CD pipelines and auto-scaling.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 px-6 bg-gray-50 dark:bg-gray-900 rounded-t-3xl">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4 gradient-text">Let's Connect</h2>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
-        </p>
-      </div>
-      
-      <div class="grid md:grid-cols-2 gap-12">
-        <form class="space-y-6" data-aos="fade-right">
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
-            <input type="text" id="name" placeholder="John Doe" class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all" />
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Email</label>
-            <input type="email" id="email" placeholder="john@example.com" class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all" />
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
-            <textarea id="message" rows="5" placeholder="Your message here..." class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
-            <i class="fas fa-paper-plane"></i> Send Message
+      <!-- Modal container -->
+      <div class="flex items-center justify-center min-h-screen p-4">
+        <!-- Modal content -->
+        <div id="modalBox" class="bg-white rounded-lg shadow-xl transform transition-all duration-300 opacity-0 translate-y-4 scale-95 max-w-md w-full p-6 relative border border-gray-200">
+          <!-- Close X Button -->
+          <button id="closeModal" type="button" class="absolute top-4 right-4 text-gray-400 hover:text-gray-500 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
-        </form>
-        
-        <div class="space-y-8" data-aos="fade-left">
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
-            <h3 class="font-semibold text-lg mb-4 text-primary-500 flex items-center gap-2">
-              <i class="fas fa-envelope"></i> Email
-            </h3>
-            <a href="mailto:imdeepaksuthar@gmail.com" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-              imdeepaksuthar@gmail.com
+          
+          <div class="text-center">
+            <svg class="mx-auto h-16 w-16 text-green-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <h3 class="text-lg font-medium text-gray-900 mt-3">Thank you!</h3>
+            <div class="mt-2">
+              <p class="text-sm text-gray-500">Your message has been sent successfully. We'll get back to you soon!</p>
+            </div>
+            <div class="mt-4">
+              <!-- Close Button (now fixed) -->
+              <button id="closeModalBtn" type="button" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blob Background Elements
+  <div class="blob bg-primary-300 w-64 h-64 top-20 -left-32 animate-blob"></div><div class="blob bg-primary-500 w-80 h-80 bottom-20 -right-32 animate-blob animation-delay-2000"></div><div class="blob bg-primary-400 w-72 h-72 top-1/2 left-1/4 animate-blob animation-delay-4000"></div> -->
+    <!-- Mobile App Style Navbar -->
+    <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 px-4 py-3 flex justify-between items-center md:hidden transition-colors duration-300">
+      <div class="font-bold text-primary-500 text-lg">Deepak Suthar</div>
+      <button id="mobileMenuToggle" class="text-gray-600 dark:text-gray-300 text-xl transition-colors">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Mobile Slide Menu -->
+    <div id="mobileMenu" class="fixed top-16 left-0 w-full bg-white dark:bg-gray-800 hidden z-40 shadow-lg px-4 py-4 space-y-4 transition-all duration-300">
+      <a href="#home" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+        <i class="fas fa-home mr-2"></i> Home </a>
+      <a href="#services" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+        <i class="fas fa-code mr-2"></i> Services </a>
+      <a href="#contact" data-scroll class="block text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+        <i class="fas fa-envelope mr-2"></i> Contact </a>
+    </div>
+    <!-- Desktop Navbar -->
+    <nav class="hidden md:flex fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 px-8 py-4 justify-between items-center transition-colors duration-300">
+      <div class="font-bold text-primary-500 text-xl">Deepak Suthar</div>
+      <div class="flex space-x-8">
+        <a href="#home" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Home</a>
+        <a href="#services" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Services</a>
+        <a href="#contact" data-scroll class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Contact</a>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <!-- Home Section -->
+    <section id="home" style="background-image: url('https://github.com/imdeepaksuthar/portfolio-link/blob/0f280281c44a5f4e65df4f2b5b187152e4c3ac29/img/bg/bg.jpg');" class="min-h-screen pt-24 px-6 flex flex-col justify-center items-center text-center relative overflow-hidden bg-cover bg-center bg-no-repeat">
+      <!-- Optional dark overlay for readability -->
+      <div class="absolute inset-0 bg-black/50 dark:bg-black/60 z-0"></div>
+      <div class="max-w-3xl mx-auto relative z-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-lg animate-float">
+          <span class="text-4xl">👋</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white"> Hey, I'm <span class="gradient-text">Deepak Suthar</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 dark:text-gray-300 mb-8"> Backend developer crafting robust APIs, scalable systems, and efficient databases with Laravel, Node.js & MySQL. </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contact" data-scroll class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+            <i class="fas fa-paper-plane"></i> Contact Me </a>
+          <a href="#services" data-scroll class="border border-primary-500 text-primary-500 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center gap-2">
+            <i class="fas fa-code"></i> My Services </a>
+        </div>
+      </div>
+      <!-- Tech Stack Icons -->
+      <div class="mt-16 grid grid-cols-4 md:flex gap-6 md:gap-10 relative z-10" data-aos="fade-up" data-aos-delay="300">
+        <div class="tech-icon" data-tooltip="Laravel">
+          <i class="fab fa-laravel text-3xl text-red-500"></i>
+        </div>
+        <div class="tech-icon" data-tooltip="Node.js">
+          <i class="fab fa-node-js text-3xl text-green-500"></i>
+        </div>
+        <div class="tech-icon" data-tooltip="MySQL">
+          <i class="fas fa-database text-3xl text-blue-500"></i>
+        </div>
+        <div class="tech-icon" data-tooltip="API Development">
+          <i class="fas fa-server text-3xl text-purple-500"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-white dark:bg-gray-800 rounded-t-3xl relative overflow-hidden">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold mb-4 gradient-text">My Expertise</h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"> I specialize in backend development with a focus on performance, security, and scalability. </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-code text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">API Development</h3>
+            <p class="text-gray-600 dark:text-gray-300"> RESTful APIs using Laravel, Node.js, Express.js with secure authentication (JWT, OAuth), rate limiting, and thorough documentation. </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-database text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">Database Design</h3>
+            <p class="text-gray-600 dark:text-gray-300"> Relational DBs, indexes, migrations, structure planning, query optimization, and data modeling for performance at scale. </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-project-diagram text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">System Architecture</h3>
+            <p class="text-gray-600 dark:text-gray-300"> Building scalable systems with microservices, code optimization, caching strategies, and cloud deployment. </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-shield-alt text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">Security</h3>
+            <p class="text-gray-600 dark:text-gray-300"> Implementing security best practices including data validation, encryption, CSRF protection, and secure authentication flows. </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-tachometer-alt text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">Performance</h3>
+            <p class="text-gray-600 dark:text-gray-300"> Optimizing backend performance through query tuning, caching strategies, and efficient algorithms. </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 mb-4 rounded-lg bg-primary-100 dark:bg-gray-700 flex items-center justify-center text-primary-500">
+              <i class="fas fa-cloud text-xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-primary-500">Cloud Integration</h3>
+            <p class="text-gray-600 dark:text-gray-300"> Deploying and managing applications on cloud platforms with CI/CD pipelines and auto-scaling. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-50 dark:bg-gray-900 rounded-t-3xl">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold mb-4 gradient-text">Let's Connect</h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"> Have a project in mind or want to discuss potential opportunities? Feel free to reach out! </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <form id="contactForm" class="space-y-6" data-aos="fade-right">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." class="w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 transition-all"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i> Send Message </button>
+          </form>
+          <div class="space-y-8" data-aos="fade-left">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 class="font-semibold text-lg mb-4 text-primary-500 flex items-center gap-2">
+                <i class="fas fa-envelope"></i> Email
+              </h3>
+              <a href="mailto:imdeepaksuthar@gmail.com" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"> imdeepaksuthar@gmail.com </a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 class="font-semibold text-lg mb-4 text-primary-500 flex items-center gap-2">
+                <i class="fas fa-code-branch"></i> Follow Me
+              </h3>
+              <div class="flex space-x-4">
+                <a href="https://github.com/imdeepaksuthar" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary-500 hover:text-white transition-all">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/imdeepaksuthar" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-500 hover:text-white transition-all">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/Deepak_suthar14" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-400 hover:text-white transition-all">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@deepdigitalmindset" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-red-500 hover:text-white transition-all">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 animate-float-reverse">
+              <h3 class="font-semibold text-lg mb-2 text-primary-500">Availability</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4"> Currently available for freelance projects and full-time opportunities. </p>
+              <div class="flex items-center gap-2 text-sm text-green-500">
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span>Open to work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center py-8 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <div class="font-bold text-primary-500 text-lg">Deepak Suthar</div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1"> Backend Developer & System Architect </p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="https://github.com/imdeepaksuthar" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/imdeepaksuthar/" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://x.com/Deepak_suthar14" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/i.amdeep" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
-          
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
-            <h3 class="font-semibold text-lg mb-4 text-primary-500 flex items-center gap-2">
-              <i class="fas fa-code-branch"></i> Follow Me
-            </h3>
-            <div class="flex space-x-4">
-              <a href="https://github.com/imdeepaksuthar" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary-500 hover:text-white transition-all">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/imdeepaksuthar" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-500 hover:text-white transition-all">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://x.com/Deepak_suthar14" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-400 hover:text-white transition-all">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.youtube.com/@deepdigitalmindset" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-red-500 hover:text-white transition-all">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 animate-float-reverse">
-            <h3 class="font-semibold text-lg mb-2 text-primary-500">Availability</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Currently available for freelance projects and full-time opportunities.
-            </p>
-            <div class="flex items-center gap-2 text-sm text-green-500">
-              <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span>Open to work</span>
-            </div>
-          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
+          <p class="text-xs text-gray-500 dark:text-gray-400"> &copy; <script>
+              document.write(new Date().getFullYear());
+            </script> Deepak Suthar. All rights reserved </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-8 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <div class="font-bold text-primary-500 text-lg">Deepak Suthar</div>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            Backend Developer & System Architect
-          </p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="https://github.com/imdeepaksuthar" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/imdeepaksuthar/" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://x.com/Deepak_suthar14" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/i.amdeep" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-      <div class="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
-        <p class="text-xs text-gray-500 dark:text-gray-400">
-          &copy; <script>document.write(new Date().getFullYear());</script> Deepak Suthar. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Initialize animations
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-out-quart'
-    });
+    </footer>
+    <!-- Scripts -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#contactForm").validate({
+          rules: {
+            name: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            message: "required"
+          },
+          messages: {
+            name: "Please enter your name",
+            email: "Please enter a valid email",
+            message: "Please enter your message"
+          },
+          submitHandler: function (form) {
+            // Add submission animation to the form
+            $("#contactForm").addClass("opacity-50 pointer-events-none");
+            $("#submitBtn").html(`
+              <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              Sending...
+            `);
+            
+            setTimeout(() => {
+              form.reset();
+              $("#contactForm").removeClass("opacity-50 pointer-events-none");
+              $("#submitBtn").html("Send Message");
+              
+              // Show modal with animation
+              $("#thankYouModal").removeClass("hidden");
+              $("#thankYouBackdrop").removeClass("backdrop-blur-none").addClass("backdrop-blur-sm");
+              $("#modalBox").removeClass("opacity-0 translate-y-4 scale-95").addClass("opacity-100 translate-y-0 scale-100");
+            }, 1500);
+          }
+        });
     
-    // Smooth scroll
-    new SmoothScroll('a[data-scroll]', { 
-      speed: 800,
-      speedAsDuration: true,
-      easing: 'easeOutQuad'
-    });
+        // Close modal - handles all close triggers (X button, backdrop, and Close button)
+        function closeModal() {
+          $("#modalBox").removeClass("opacity-100 translate-y-0 scale-100").addClass("opacity-0 translate-y-4 scale-95");
+          $("#thankYouBackdrop").removeClass("backdrop-blur-sm").addClass("backdrop-blur-none");
+          setTimeout(() => {
+            $("#thankYouModal").addClass("hidden");
+          }, 300);
+        }
     
-    // Mobile menu toggle
-    document.getElementById('mobileMenuToggle').addEventListener('click', () => {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('animate-slideInDown');
-    });
+        // Attach click handlers to all close triggers
+        $("#closeModal, #thankYouBackdrop, #closeModalBtn").on('click', closeModal);
+      });
+    </script>
+       
     
-    // Theme toggle
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    });
-    
-    // Check for saved theme preference
-    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-    
-    // Tooltips for tech icons
-    const techIcons = document.querySelectorAll('.tech-icon');
-    techIcons.forEach(icon => {
-      const tooltip = document.createElement('div');
-      tooltip.textContent = icon.getAttribute('data-tooltip');
-      tooltip.className = 'absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200';
-      icon.appendChild(tooltip);
-      icon.classList.add('group', 'relative');
-    });
-
-    const menuToggle = document.getElementById('mobileMenuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-  
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    document.getElementById("mobileMenuToggle").addEventListener("click", function () {
-    document.getElementById("mobileMenu").classList.toggle("hidden");
-  });
-
-  document.getElementById("themeToggle").addEventListener("click", function () {
-    document.documentElement.classList.toggle("dark");
-  });
-
-    const themeToggle = document.getElementById('themeToggle');
-    const htmlElement = document.documentElement;
-    
-    themeToggle.addEventListener('click', () => {
-      htmlElement.classList.toggle('dark');
-      localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
-    });
-  
-    // Load saved theme on page load
-    if (localStorage.getItem('theme') === 'dark' || 
-       (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      htmlElement.classList.add('dark');
-    }
-
-    AOS.init();
-  </script>
-  
-</body>
+    <script>
+      // Initialize animations
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: 'ease-out-quart'
+      });
+      // Smooth scroll
+      new SmoothScroll('a[data-scroll]', {
+        speed: 800,
+        speedAsDuration: true,
+        easing: 'easeOutQuad'
+      });
+      // Mobile menu toggle
+      document.getElementById('mobileMenuToggle').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('animate-slideInDown');
+      });
+      // Theme toggle
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      });
+      // Check for saved theme preference
+      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+      // Tooltips for tech icons
+      const techIcons = document.querySelectorAll('.tech-icon');
+      techIcons.forEach(icon => {
+        const tooltip = document.createElement('div');
+        tooltip.textContent = icon.getAttribute('data-tooltip');
+        tooltip.className = 'absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200';
+        icon.appendChild(tooltip);
+        icon.classList.add('group', 'relative');
+      });
+      const menuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.getElementById("mobileMenuToggle").addEventListener("click", function() {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+      document.getElementById("themeToggle").addEventListener("click", function() {
+        document.documentElement.classList.toggle("light");
+      });
+      const themeToggle = document.getElementById('themeToggle');
+      const htmlElement = document.documentElement;
+      themeToggle.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+        localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
+      });
+      // Load saved theme on page load
+      if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+      }
+      AOS.init();
+    </script>
+  </body>
 </html>
